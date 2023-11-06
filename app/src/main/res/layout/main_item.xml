@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/carddatauser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="20dp"
+    app:cardBackgroundColor="@color/grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/fotoprofil"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/profilelogo"-->
+<!--            android:layout_centerVertical="true"/>-->
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/outline_person_outline_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/namaprofil"
+            android:text="Nama User"
+            android:textStyle="bold"
+            android:fontFamily="@font/champion"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailprofil"
+            android:text="Email User"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/namaprofil"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordprofil"
+            android:text="Password"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:layout_below="@+id/emailprofil"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgtopbar"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="UBAH DATA"
+        android:fontFamily="@font/mantanaregular"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="40dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/giflogoacak"/>
+
+    <LinearLayout
+        android:layout_below="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="40dp">
+
+        <EditText
+            android:id="@+id/ubahnamauser"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:ems="30"
+            android:hint="Nama User"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/ubahemailuser"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:hint="emailuser@gmail.com"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/ubahpassworduser"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="100"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/umpetpassword"
+            android:longClickable="false"
+            android:text="password123"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+<!--        <EditText-->
+<!--            android:id="@+id/ubahconfirmpassworduser"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:ems="100"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:text="password123"-->
+<!--            android:drawableRight="@drawable/umpetpassword"-->
+<!--            android:longClickable="false"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textColorHint="@color/white"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="440dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_batalubahdatauser"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/white"
+            android:text="Batal"/>
+
+        <Button
+            android:id="@+id/btn_updatedatauser"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/white"
+            android:text="Update"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

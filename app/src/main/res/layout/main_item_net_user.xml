@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/carddatawarnetuser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="20dp"
+    app:cardBackgroundColor="@color/grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/fotowarnetuser"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/locationlogo"-->
+<!--            android:layout_centerVertical="true"/>-->
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_location_on_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/namawarnetuser"
+            android:text="Warnet"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/champion"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

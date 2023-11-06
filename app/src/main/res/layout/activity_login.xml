@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgshadow"
+    tools:context=".LoginActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="70dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/giflogoiuneon"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:fontFamily="@font/megatroncondensed"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="40dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Email"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:drawableRight="@drawable/umpetpassword"
+            android:longClickable="false"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Belum memiliki akun ? "/>
+            <TextView
+                android:id="@+id/daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/daftar"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:text="Back"/>
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:text="Login"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

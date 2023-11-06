@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgtopbar"
+    android:paddingHorizontal="15dp"
+    android:paddingTop="15dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/transparent"
+            android:outlineProvider="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--                <ImageView-->
+                <!--                    android:layout_width="30dp"-->
+                <!--                    android:layout_height="30dp"-->
+                <!--                    android:src="@drawable/baseline_login"/>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Log In"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/megatroncondensed"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_below="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--                <pl.droidsonroids.gif.GifImageView-->
+            <!--                    android:id="@+id/imageView"-->
+            <!--                    android:layout_marginTop="40dp"-->
+            <!--                    android:layout_width="100dp"-->
+            <!--                    android:layout_height="100dp"-->
+            <!--                    android:src="@drawable/wellactuallyuhhh">-->
+            <!--                </pl.droidsonroids.gif.GifImageView>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="260dp"
+                android:text="Mau Cari Warnet ?"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/pencilized"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log In dulu yuk!"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/hangedletters"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App Version 1.1"
+                android:textColor="@color/white"
+                android:gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="330dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

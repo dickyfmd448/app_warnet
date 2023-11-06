@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgshadow"
+    tools:context=".LoginActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="120dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/giflogoacak"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TAMBAH DATA"
+        android:fontFamily="@font/mantanaregular"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="40dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Your Name"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Email"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/umpetpassword"
+            android:longClickable="false"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/umpetpassword"
+            android:longClickable="false"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:text="Sudah mempunyai akun ? "/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/login"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="@string/login"/>-->
+<!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="480dp">
+
+        <Button
+            android:id="@+id/btn_backtambahdatauser"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/white"
+            android:text="Back"/>
+
+        <Button
+            android:id="@+id/btn_tambahdatauser"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/white"
+            android:text="Tambah"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

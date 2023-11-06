@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "222296490870",
+    "firebase_url": "https://appwarnet-1eed5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "appwarnet-1eed5",
+    "storage_bucket": "appwarnet-1eed5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222296490870:android:385bc3780c1c3105f17057",
+        "android_client_info": {
+          "package_name": "com.example.app_warnet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRyQg51msLTA9lWX_oqMXxbFmb-JtOGrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

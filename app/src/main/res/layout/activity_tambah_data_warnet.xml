@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgtopbar"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="TAMBAH DATA"
+        android:fontFamily="@font/mantanaregular"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="40dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/giflogoacak"/>
+
+    <LinearLayout
+        android:layout_below="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="40dp">
+
+        <EditText
+            android:id="@+id/tambahnamawarnet"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="30"
+            android:hint="Nama Warnet"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/tambahalamatwarnet"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="100"
+            android:hint="Alamat Warnet"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/tambahhargawarnet"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="100"
+            android:hint="Harga"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/tambahfasilitaswarnet"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="100"
+            android:hint="Fasilitas"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/tambahmapswarnet"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="100"
+            android:hint="Link Google Maps"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+        <ImageView
+            android:id="@+id/photoWarnet"
+            android:layout_marginTop="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerCrop"
+            android:cropToPadding="false"
+            android:src="@drawable/baseline_add_a_photo_24">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Input Gambar"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="650dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_backtambahdatawarnet"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/white"
+            android:text="Back"/>
+
+        <Button
+            android:id="@+id/btn_tambahdatawarnet"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/white"
+            android:text="Tambah"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
